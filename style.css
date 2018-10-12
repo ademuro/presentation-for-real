@@ -1,9 +1,9 @@
 section {
     width: 200px;
     height: 100px;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding-left: 1em;
+    border: 1px solid palevioletred;
+    border-radius: 3px;
+    padding-left: 4em;
     -webkit-transition: -webkit-transform .7s ease, opacity .7s ease;
     -moz-transition: -moz-transform .7s ease, opacity .7s ease;
     -ms-transition: -ms-transform .7s ease, opacity .7s ease;
