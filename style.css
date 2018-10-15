@@ -2,8 +2,7 @@ section {
     width: 400px;
     height: 250px;
     border: 4px solid palevioletred;
-    border-radius: 15px 50px;
-   
+    padding-left: 2em;
     -webkit-transition: -webkit-transform .7s ease, opacity .7s ease;
     -moz-transition: -moz-transform .7s ease, opacity .7s ease;
     -ms-transition: -ms-transform .7s ease, opacity .7s ease;
