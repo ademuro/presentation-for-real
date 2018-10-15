@@ -1,42 +1,27 @@
 $(function () {
   'use strict';
-  var currSlide = 1;
+  var currSlide = 0;
   var allSlides = $('section');
 
   $(document).on('keydown', function (event) {
     var nextSlide;
 
-    if (event.keyCode === 37 && currSlide) {
-      console.log('prev slide');
-      $(allSlides[currSlide - 1])
-        .removeClass('prev')
-        .addClass('active');
-      $(allSlides[currSlide + 1])
-        .removeClass('next')
-        .addClass('inactive');
-      $(allSlides[currSlide])
-        .removeClass('active')
-        .addClass('next');
-      $(allSlides[currSlide - 2])
-        .removeClass('inactive')
-        .addClass('prev');
-      currSlide -= 1;
-    } else if (event.keyCode === 39 && currSlide < allSlides.length - 1) {
+    if (event.keyCode === 37) { // clicked left arrow
+      nextSlide = currSlide ? currSlide - 1 : currSlide;
+    } else if (event.keyCode === 39) { // clicked right arrow
       console.log('next slide');
-      $(allSlides[currSlide - 1])
-        .removeClass('prev')
-        .addClass('inactive');
-      $(allSlides[currSlide + 1])
-        .removeClass('next')
-        .addClass('active');
+      nextSlide = currSlide < allSlides.length - 1 ? currSlide + 1 : currSlide;
+    }
+    if (nextSlide !== currSlide) {
       $(allSlides[currSlide])
         .removeClass('active')
-        .addClass('prev');
-      $(allSlides[currSlide + 2])
+        .addClass('inactive');
+      $(allSlides[nextSlide])
         .removeClass('inactive')
-        .addClass('next');
-      currSlide += 1;
+        .addClass('active');
+      currSlide = nextSlide;
     }
     event.preventDefault();
   });
 });
+
