@@ -1,33 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <script data-require="jquery@2.0.3" data-semver="2.0.3" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-  <link href="style.css" rel="stylesheet"/>
-  <script src="script.js"></script>
-  <title> welcome to the jam </title>
 
-</head>
+  <head>
+    <script data-require="jquery@2.0.3" data-semver="2.0.3" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <style>
+      .help {
+        position: relative;
+        top: 110px;
+      }
+    </style>
+  </head>
 
-<body>
-    <body>
-        <article>
-          <section class="prev">
-            <h2>Slide 1</h2>
-            <p>This is the first slide</p>
-          </section>
-          <section class="active">
-            <h2>Slide 2</h2>
-            <p>Second slide</p>
-          </section>
-          <section class="next">
-            <h2>Slide 3</h2>
-            <p>Another slide</p>
-          </section>
-          <section class="inactive after">
-            <h2>Slide 4</h2>
-            <p>Last slide</p>
-          </section>
-        </article>
+  <body>
+    <article>
+      <section class="prev">
+        <h2>Slide 1</h2>
+        <p>This is the first slide</p>
+      </section>
+      <section class="active">
+        <h2>Slide 2</h2>
+        <p>Second slide</p>
+      </section>
+      <section class="next">
+        <h2>Slide 3</h2>
+        <p>Another slide</p>
+      </section>
+      <section class="inactive after">
+        <h2>Slide 4</h2>
+        <p>Last slide</p>
+      </section>
+    </article>
+
+    <div class="help">
+    <h1>Presentation demo</h1>
+    <p>Small slide-based presentation engine
+      showing how to use HTML and CSS3 transitions
+      to create in browser experience similar
+      to PowerPoint, Prezi, etc. For full implementation, check out
+            <a href="http://glebbahmutov.com/slides-now">slides-now</a>
+    </p>
+    <p>To use: press right/left arrow key to go to the next/previous slide.</p>
+    <p>
+      Gleb Bahmutov       <a href="http://glebbahmutov.com">glebbahmutov.com</a>
+    </p>
+    </div>
   </body>
 
-  </html>
+</html>
