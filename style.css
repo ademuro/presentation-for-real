@@ -3,6 +3,9 @@ section {
     height: 250px;
     border: 4px solid palevioletred;
     padding-left: 2em;
+    padding-bottom: 2em;
+    padding-right: 2em;
+    padding-top: 2em;
     -webkit-transition: -webkit-transform .7s ease, opacity .7s ease;
     -moz-transition: -moz-transform .7s ease, opacity .7s ease;
     -ms-transition: -ms-transform .7s ease, opacity .7s ease;
