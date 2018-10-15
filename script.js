@@ -19,5 +19,21 @@ $(function () {
       currSlide = nextSlide;
     }
     event.preventDefault();
+  if (event.keyCode === 37 && currSlide) {
+    // previous slide
+    $(allSlides[currSlide - 1])
+      .removeClass('prev')
+      .addClass('active');
+    $(allSlides[currSlide + 1])
+      .removeClass('next')
+      .addClass('inactive');
+    $(allSlides[currSlide])
+      .removeClass('active')
+      .addClass('next');
+    $(allSlides[currSlide - 2])
+      .removeClass('inactive')
+      .addClass('prev');
+    currSlide -= 1;
+  }
   });
 });
