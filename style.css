@@ -21,7 +21,14 @@ section.inactive {
     visibility: hidden;
     display: none;
   }
-
+  .before {
+    -webkit-transform: translate3d(-220%, 0, 0);
+    -moz-transform: translate3d(-220%, 0, 0);
+    -ms-transform: translate3d(-220%, 0, 0);
+    -o-transform: translate3d(-220%, 0, 0);
+    transform: translate3d(-220%, 0, 0);
+    opacity: 0;
+  }
 .prev {
     -webkit-transform: translate3d(-110%, 0, 0);
     -moz-transform: translate3d(-110%, 0, 0);
@@ -30,9 +37,7 @@ section.inactive {
     transform: translate3d(-110%, 0, 0);
     opacity: 0.25;
 }
-.active {
-    opacity: 1;
-}
+
 .next {
     -webkit-transform: translate3d(110%, 0, 0);
     -moz-transform: translate3d(110%, 0, 0);
@@ -41,12 +46,6 @@ section.inactive {
     transform: translate3d(110%, 0, 0);
     opacity: 0.25;
 }
-
-.before {
-    -webkit-transform: translate3d(-220%, 0, 0);
-    -moz-transform: translate3d(-220%, 0, 0);
-    -ms-transform: translate3d(-220%, 0, 0);
-    -o-transform: translate3d(-220%, 0, 0);
-    transform: translate3d(-220%, 0, 0);
-    opacity: 0;
-  }
+.active {
+    opacity: 1;
+}
